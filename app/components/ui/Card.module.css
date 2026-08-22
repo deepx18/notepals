@@ -1,0 +1,22 @@
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  transition:
+    border-color var(--transition-fast),
+    background-color var(--transition-fast);
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.clickable:hover {
+  border-color: var(--border-strong);
+  background: var(--surface-raised);
+}
+
+.selected {
+  border-color: var(--primary);
+  background: var(--surface-raised);
+}

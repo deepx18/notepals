@@ -1,0 +1,56 @@
+.dashboardLayout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.dashboardBody {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.dashboardContent {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Panels */
+.panels {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+}
+
+.notesPanel {
+  width: 340px;
+  flex-shrink: 0;
+  border-right: 1px solid var(--border);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.editorPanel {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .notesPanel {
+    width: 100%;
+    border-right: none;
+  }
+
+  .editorPanel {
+    width: 100%;
+  }
+}
